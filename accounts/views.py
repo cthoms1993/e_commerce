@@ -10,7 +10,6 @@ def index(request):
     return render(request, 'index.html')
 
 
-@login_required
 def logout(request):
     auth.logout(request)
     messages.success(request, "you have successfully been logged out")
@@ -37,6 +36,12 @@ def login(request):
     return render(request, 'login.html', {"login_form": login_form})
 
 
+@login_required
+def profile(request):
+    """A view that displays the profile page of a logged in user"""
+    return render(request, 'profile.html')
+
+
 def register(request):
     if request.user.is_authenticated:
         return redirect(reverse('index'))
@@ -59,6 +64,5 @@ def register(request):
 
 
 def user_profile(request):
-    user = User.objects.get(email=request.user.email,)
+    user = User.objects.get(email=request.user.email, )
     return render(request, 'profile.html', {"profile": user})
-
