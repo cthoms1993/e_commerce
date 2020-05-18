@@ -3,3 +3,4 @@ staticfiles
 *.png
 static
 media
+db.sqlite3
