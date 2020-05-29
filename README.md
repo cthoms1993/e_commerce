@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.com/cthoms1993/e_commerce.svg?branch=master)](https://travis-ci.com/cthoms1993/e_commerce)
+[![Build Status](https://travis-ci.com/cthoms1993/voicetechecommerce.svg?branch=master)](https://travis-ci.com/cthoms1993/voicetechecommerce)
